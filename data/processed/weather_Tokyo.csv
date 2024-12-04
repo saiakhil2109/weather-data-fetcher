@@ -1,0 +1,2 @@
+base,visibility,dt,timezone,id,name,cod,coord.lon,coord.lat,main.temp,main.feels_like,main.temp_min,main.temp_max,main.pressure,main.humidity,main.sea_level,main.grnd_level,wind.speed,wind.deg,clouds.all,sys.type,sys.id,sys.country,sys.sunrise,sys.sunset
+stations,10000,1733307197,32400,1850144,Tokyo,200,139.6917,35.6895,13.57,12.11,12.03,14.81,1011,43,1011,1009,4.12,340,40,2,268395,JP,1733261719,1733297273

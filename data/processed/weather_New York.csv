@@ -1,0 +1,2 @@
+base,visibility,dt,timezone,id,name,cod,coord.lon,coord.lat,main.temp,main.feels_like,main.temp_min,main.temp_max,main.pressure,main.humidity,main.sea_level,main.grnd_level,wind.speed,wind.deg,clouds.all,sys.type,sys.id,sys.country,sys.sunrise,sys.sunset
+stations,10000,1733307364,-18000,5128581,New York,200,-74.006,40.7143,-0.62,-4.33,-3.34,0.55,1026,73,1026,1024,3.09,250,0,1,4610,US,1733313860,1733347735

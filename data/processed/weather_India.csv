@@ -1,0 +1,2 @@
+base,visibility,dt,timezone,id,name,cod,coord.lon,coord.lat,main.temp,main.feels_like,main.temp_min,main.temp_max,main.pressure,main.humidity,main.sea_level,main.grnd_level,wind.speed,wind.deg,wind.gust,clouds.all,sys.country,sys.sunrise,sys.sunset
+stations,10000,1733307151,3600,3168508,Innichen,200,12.2797,46.7406,1.32,1.32,1.32,1.32,1022,64,1022,815,1.27,5,1.91,100,IT,1733294334,1733325833

@@ -1,0 +1,40 @@
+Step 1: 
+Check SQL Server Installation Logs
+Open the log file from the path indicated in the error message:
+C:\Program Files\Microsoft SQL Server\160\Setup Bootstrap\Log\<date-time-folder>\Detail.txt
+Look for any specific errors related to the failure of starting SQL services or database engine recovery.
+
+Step 2: 
+Check for Port Conflicts
+SQL Server might fail to start if there’s a conflict with the port it is trying to use (default is 1433). Ensure no other service is using the same port.
+To check port usage:
+Open Command Prompt as Administrator.
+Run the following command:
+bash
+Copy code
+netstat -ano | findstr 1433
+If the port is in use by another process, consider changing SQL Server’s port during installation.
+
+Step 3:
+Ensure Required Permissions
+Ensure that the account used to run the SQL Server setup has adequate permissions on the machine. The installer might need to configure firewall rules, access system files, or set up services, which require administrator rights.
+
+Step 4: 
+Ensure .NET Framework is Installed and Enabled
+SQL Server relies on certain .NET Framework components to function correctly. Make sure the required versions of the .NET Framework are installed:
+Open Control Panel > Programs > Turn Windows features on or off.
+Ensure that .NET Framework 3.5 and .NET Framework 4.8 (or later) are checked.
+If they aren’t installed, install them and retry the installation.
+
+Step 5: 
+Manually Start SQL Server Services
+Open Services (type services.msc in the Windows search).
+Look for SQL Server services related to the instance you are trying to install (e.g., SQL Server (MSSQLSERVER) or a named instance).
+Right-click the service and try to start it manually.
+If the service fails to start, note any error messages or check the Event Viewer logs for more details.
+
+Step 6: 
+Clean Up Previous Installations
+If the error persists, there could be remnants from previous installations that are causing the issue. Use the SQL Server Setup Cleanup Tool to remove any incomplete installations:
+Download the tool from Microsoft: SQL Server Setup Cleanup Tool.
+After cleaning, try installing again.

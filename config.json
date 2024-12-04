@@ -1,0 +1,7 @@
+{
+  "api_key": "5cae3fa3607d1d6fbfed236156804c9f",
+  "locations": ["India", "New York", "Tokyo"],
+  "units": "metric",
+  "raw_filename": "data/raw/weather_{location}.json",
+  "processed_filename": "data/processed/weather_{location}.csv"
+}
